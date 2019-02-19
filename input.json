@@ -1,0 +1,459 @@
+{
+	"script": "// You can reference the input variables using input.NAME\nexports.step = function(input) {\n    \n    var priority;\n    if (input.foo.custom_fields[0].enum_value.hasOwnProperty('name')){\n        priority = input.foo.custom_fields[0].enum_value.name;\n    }else priority = null;\n  \n  \tvar status;\n    if (input.foo.custom_fields[1].enum_value.hasOwnProperty('name')){\n        status = input.foo.custom_fields[1].enum_value.name;\n    }else status = null;\n  \n  \tvar type;\n    if (input.foo.custom_fields[2].enum_value.hasOwnProperty('name')){\n        type = input.foo.custom_fields[2].enum_value.name;\n    }else type = null;\n  \n  \tvar strategic_alignment;\n    if (input.foo.custom_fields[3].enum_value.hasOwnProperty('name')){\n        strategic_alignment = input.foo.custom_fields[3].enum_value.name;\n    }else strategic_alignment = null;\n  \n  \tvar ebitda_dollars;\n    if (input.foo.custom_fields[4].enum_value.hasOwnProperty('name')){\n        ebitda_dollars = input.foo.custom_fields[4].enum_value.name;\n    }else ebitda_dollars = null;\n  \n  \tvar ebitda_impact_date;\n    if (input.foo.custom_fields[5].enum_value.hasOwnProperty('name')){\n        ebitda_impact_date = input.foo.custom_fields[5].enum_value.name;\n    }else ebitda_impact_date = null;\n  \n  \tvar ebitda_attainment;\n    if (input.foo.custom_fields[6].enum_value.hasOwnProperty('name')){\n        ebitda_attainment = input.foo.custom_fields[6].enum_value.name;\n    }else ebitda_attainment = null;\n  \n  \tvar required_capital;\n    if (input.foo.custom_fields[7].enum_value.hasOwnProperty('name')){\n        required_capital = input.foo.custom_fields[7].enum_value.name;\n    }else required_capital = null;\n  \n  \tvar required_man_hours;\n    if (input.foo.custom_fields[8].enum_value.hasOwnProperty('name')){\n        required_man_hours = input.foo.custom_fields[8].enum_value.name;\n    }else required_man_hours = null;\n  \n  \tvar progress_percent;\n    if (input.foo.custom_fields[9].enum_value.hasOwnProperty('name')){\n        progress_percent = input.foo.custom_fields[9].enum_value.name;\n    }else progress_percent = null;\n\n    \n    return {\n        \"priority\": priority,\n        \"status\": status,\n      \t\"type\": type,\n      \t\"strategic_alignment\": strategic_alignment,\n      \t\"ebitda_dollars\": ebitda_dollars,\n      \t\"ebitda_impact_date\": ebitda_impact_date,\n      \t\"ebitda_attainment\": ebitda_attainment,\n      \t\"required_capital\": required_capital,\n      \t\"required_man_hours\": required_man_hours,\n      \t\"progress_percent\": progress_percent\n    };\n};",
+	"variables": [
+		{
+			"name": "foo",
+			"value": {
+				"notes": "",
+				"assignee_status": "upcoming",
+				"hearted": false,
+				"num_hearts": 0,
+				"completed_at": null,
+				"custom_fields": [
+					{
+						"id": 467815227711760,
+						"enabled": true,
+						"enum_options": [
+							{
+								"id": 467815227711761,
+								"color": "red",
+								"enabled": true,
+								"name": "#1 "
+							},
+							{
+								"id": 467815227711762,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "#2 "
+							},
+							{
+								"id": 467815227711763,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "#3 "
+							},
+							{
+								"id": 467815227711764,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "#4 "
+							},
+							{
+								"id": 467815227711765,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "#5 "
+							},
+							{
+								"id": 467815227711766,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "#6 "
+							}
+						],
+						"enum_value": null,
+						"name": "Priority",
+						"type": "enum"
+					},
+					{
+						"id": 467838462446500,
+						"enabled": true,
+						"enum_options": [
+							{
+								"id": 467838462446501,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "Proposed"
+							},
+							{
+								"id": 467838462446502,
+								"color": "red",
+								"enabled": true,
+								"name": "Not Started"
+							},
+							{
+								"id": 467838462446503,
+								"color": "magenta",
+								"enabled": true,
+								"name": "Evaluation"
+							},
+							{
+								"id": 467838462446504,
+								"color": "magenta",
+								"enabled": true,
+								"name": "In Progress"
+							},
+							{
+								"id": 467838462446505,
+								"color": "green",
+								"enabled": true,
+								"name": "Completed"
+							}
+						],
+						"enum_value": null,
+						"name": "Status",
+						"type": "enum"
+					},
+					{
+						"id": 471640609183898,
+						"enabled": true,
+						"enum_options": [
+							{
+								"id": 471640609183899,
+								"color": "purple",
+								"enabled": true,
+								"name": "Commercial"
+							},
+							{
+								"id": 471640609183900,
+								"color": "purple",
+								"enabled": true,
+								"name": "Operational"
+							}
+						],
+						"enum_value": null,
+						"name": "Type",
+						"type": "enum"
+					},
+					{
+						"id": 471640609183888,
+						"enabled": true,
+						"enum_options": [
+							{
+								"id": 471640609183889,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "Telecom Growth"
+							},
+							{
+								"id": 471640609183890,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "IOU Growth"
+							},
+							{
+								"id": 471640609183891,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "International Growth"
+							},
+							{
+								"id": 471640609183892,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "Optimize 3rd Party Distribution"
+							},
+							{
+								"id": 471640609183893,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "Rental Houses"
+							},
+							{
+								"id": 471640609183894,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "Supply Chain"
+							},
+							{
+								"id": 471640609183895,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "Manufacturing"
+							},
+							{
+								"id": 471640609183896,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "Owned Distribution Profitability"
+							}
+						],
+						"enum_value": null,
+						"name": "Strategic Alignment",
+						"type": "enum"
+					},
+					{
+						"id": 467815227711794,
+						"enabled": true,
+						"name": "EBITDA $",
+						"text_value": null,
+						"type": "text"
+					},
+					{
+						"id": 471621751694271,
+						"enabled": true,
+						"enum_options": [
+							{
+								"id": 471621751694272,
+								"color": "blue",
+								"enabled": true,
+								"name": "Q1 2018"
+							},
+							{
+								"id": 471621751694273,
+								"color": "blue",
+								"enabled": true,
+								"name": "Q2 2018"
+							},
+							{
+								"id": 471621751694274,
+								"color": "blue",
+								"enabled": true,
+								"name": "Q3 2018"
+							},
+							{
+								"id": 471621751694275,
+								"color": "blue",
+								"enabled": true,
+								"name": "Q4 2018"
+							},
+							{
+								"id": 471621751694276,
+								"color": "green",
+								"enabled": true,
+								"name": "Q1 2019"
+							},
+							{
+								"id": 471621751694277,
+								"color": "green",
+								"enabled": true,
+								"name": "Q2 2019"
+							},
+							{
+								"id": 471621751694278,
+								"color": "green",
+								"enabled": true,
+								"name": "Q3 2019"
+							},
+							{
+								"id": 471621751694279,
+								"color": "green",
+								"enabled": true,
+								"name": "Q4 2019"
+							},
+							{
+								"id": 471621751694280,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "Q1 2020"
+							},
+							{
+								"id": 471621751694281,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "Q2 2020"
+							},
+							{
+								"id": 471621751694282,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "Q3 2020"
+							},
+							{
+								"id": 471621751694283,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "Q4 2020"
+							}
+						],
+						"enum_value": null,
+						"name": "EBITDA Impact Date",
+						"type": "enum"
+					},
+					{
+						"id": 468544026745053,
+						"enabled": true,
+						"enum_options": [
+							{
+								"id": 468544026745054,
+								"color": "red",
+								"enabled": true,
+								"name": "0%"
+							},
+							{
+								"id": 468544026745055,
+								"color": "red",
+								"enabled": true,
+								"name": "10%"
+							},
+							{
+								"id": 468544026745056,
+								"color": "red",
+								"enabled": true,
+								"name": "20%"
+							},
+							{
+								"id": 468544026745057,
+								"color": "red",
+								"enabled": true,
+								"name": "30%"
+							},
+							{
+								"id": 468544026745058,
+								"color": "red",
+								"enabled": true,
+								"name": "40%"
+							},
+							{
+								"id": 468544026745059,
+								"color": "yellow-orange",
+								"enabled": true,
+								"name": "50%"
+							},
+							{
+								"id": 468544026745060,
+								"color": "yellow-orange",
+								"enabled": true,
+								"name": "60%"
+							},
+							{
+								"id": 468544026745061,
+								"color": "yellow-orange",
+								"enabled": true,
+								"name": "70%"
+							},
+							{
+								"id": 468544026745062,
+								"color": "yellow",
+								"enabled": true,
+								"name": "80%"
+							},
+							{
+								"id": 468544026745063,
+								"color": "yellow",
+								"enabled": true,
+								"name": "90%"
+							},
+							{
+								"id": 468544026745064,
+								"color": "green",
+								"enabled": true,
+								"name": "100%"
+							}
+						],
+						"enum_value": null,
+						"name": "EBITDA Attainment",
+						"type": "enum"
+					},
+					{
+						"id": 468562849880491,
+						"enabled": true,
+						"name": "Required Capital",
+						"text_value": null,
+						"type": "text"
+					},
+					{
+						"id": 468562849880493,
+						"enabled": true,
+						"name": "Required Man Hours",
+						"text_value": null,
+						"type": "text"
+					},
+					{
+						"id": 467843518501877,
+						"enabled": true,
+						"enum_options": [
+							{
+								"id": 467843518501878,
+								"color": "red",
+								"enabled": true,
+								"name": "0%"
+							},
+							{
+								"id": 467843518501879,
+								"color": "red",
+								"enabled": true,
+								"name": "10%"
+							},
+							{
+								"id": 467843518501880,
+								"color": "red",
+								"enabled": true,
+								"name": "20%"
+							},
+							{
+								"id": 467843518501881,
+								"color": "red",
+								"enabled": true,
+								"name": "30%"
+							},
+							{
+								"id": 467843518501882,
+								"color": "red",
+								"enabled": true,
+								"name": "40%"
+							},
+							{
+								"id": 467843518501883,
+								"color": "blue-green",
+								"enabled": true,
+								"name": "50%"
+							},
+							{
+								"id": 467843518501884,
+								"color": "green",
+								"enabled": true,
+								"name": "60%"
+							},
+							{
+								"id": 467843518501885,
+								"color": "green",
+								"enabled": true,
+								"name": "70%"
+							},
+							{
+								"id": 467843518501886,
+								"color": "green",
+								"enabled": true,
+								"name": "80%"
+							},
+							{
+								"id": 467843518501887,
+								"color": "green",
+								"enabled": true,
+								"name": "90%"
+							},
+							{
+								"id": 467843518501888,
+								"color": "green",
+								"enabled": true,
+								"name": "100%"
+							}
+						],
+						"enum_value": null,
+						"name": "Progress %",
+						"type": "enum"
+					}
+				],
+				"modified_at": "2017-11-01T00:08:59.612Z",
+				"due_on": null,
+				"parent": null,
+				"created_at": "2017-10-31T23:34:20.300Z",
+				"completed": false,
+				"name": "Solutions:",
+				"hearts": [],
+				"html_notes": "",
+				"assignee": null,
+				"followers": [
+					{
+						"id": 21269332326088
+					}
+				],
+				"workspace": {
+					"id": 21269321459644
+				},
+				"tags": [],
+				"projects": [
+					{
+						"id": 467791456322361
+					}
+				],
+				"id": 467791456322365,
+				"memberships": [
+					{}
+				],
+				"due_at": null
+			}
+		}
+	]
+}
