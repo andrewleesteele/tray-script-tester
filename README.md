@@ -1,5 +1,5 @@
 # tray-script-tester
-Tool to develop/test script steps for the tray.io platform.
+Tool to develop and test script steps for the tray.io platform.
 
 ### Setup:
 1. Download repo.
