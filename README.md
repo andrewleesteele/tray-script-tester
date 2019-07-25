@@ -21,7 +21,7 @@ npm install moment
 npm install request
 ```
 ### To Run:
-1. Open ‘index.js’ and ‘script.js’ in separate text editors. 
+1. Open ‘input.json’ and ‘script.js’ in separate text editors. 
 2. Paste the literal INPUT from a Script step in the logs into the ‘input’ file.
 3. Paste your full Script into the ‘script’ file.
 4. Navigate to the tray-script-tester folder in terminal, and type ‘node run.js’. It will execute your code and show you the output that you would expect to see in the Tray builder.
